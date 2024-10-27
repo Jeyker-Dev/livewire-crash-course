@@ -16,7 +16,8 @@ new class extends Component {
 <div class="">
     <h1 class="text-4xl">Hello World</h1>
 
-    <input type="number" wire:model.blur='number'>
+    <input type="number" wire:model.blur='
+    '>
     <p class="mt-4 text-lg">
         Counter:
         <span class="text-sm">{{$counter}}</span>
@@ -24,4 +25,9 @@ new class extends Component {
             Change Counter
         </button>
     </p>
+
+    <livewire:form />
+
+    <livewire:dispatch-event />
+    <livewire:receive-event />
 </div>
